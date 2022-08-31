@@ -2,7 +2,9 @@ import express from 'express'
 
 const app = express()
 
-app.get('/', (req, res) => res.send('hello word'))
+app.set('view engine', 'ejs')
+
+app.get('/', (req, res) => res.send('Hello word'))
 
 app.listen(3000)
 console.log('Server is listening on port',3000);    
