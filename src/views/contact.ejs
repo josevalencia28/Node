@@ -11,24 +11,35 @@
 <body>
     <%- include('partials/navegation') %>
 
-    <div class="container vh-100 d-flex justify-content_center align-items-center">
+   <form class="containe-lg m-5 p-5">
 
-        <div class="card bg-primary">
-            <div class="card-header">
-            <h3>Contactame</h3>
-        </div>
-       <div classs="card-body">
-        <form>
-            <label for="email">Email</label>
-            <input type="email" placeholder="Email">
+        <div class="container p-5 text-center shadow-lg p-3 rounded bg-white border border-light">
+            <h2 class="card-header">Conatact Me</h2>
 
-            <label for="mesage">Mensaje</label>
-            <textarea name="message" rows="3"></textarea>
-            <button>
-                save
-            </button>
-        </form>
+            <div class="containe-fluid w-50 mx-auto p-2">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label"></label>
+
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                
+                </div>
+            
+
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label"></label>
+
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder
+                    ="Commenters"></textarea>
+
+                </div>
+
+            </div>
+
+            <button class="btn btn-outline-primary w-50 rounded">Send</button>
+
        </div>
-    </div>
+       
+    </form>
+
 </body>
 </html>
