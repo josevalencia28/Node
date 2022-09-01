@@ -10,6 +10,25 @@
 </head>
 <body>
     <%- include('partials/navegation') %>
-    <h1>Contacto</h1>
+
+    <div class="container vh-100 d-flex justify-content_center align-items-center">
+
+        <div class="card bg-primary">
+            <div class="card-header">
+            <h3>Contactame</h3>
+        </div>
+       <div classs="card-body">
+        <form>
+            <label for="email">Email</label>
+            <input type="email" placeholder="Email">
+
+            <label for="mesage">Mensaje</label>
+            <textarea name="message" rows="3"></textarea>
+            <button>
+                save
+            </button>
+        </form>
+       </div>
+    </div>
 </body>
 </html>
